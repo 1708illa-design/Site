@@ -1,0 +1,146 @@
+/* --- Загальні налаштування --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Сучасний шрифт */
+    background-color: #ffffff; /* Білий фон як на скріні */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Хедер --- */
+header {
+    padding: 20px 0;
+    text-align: left; /* Вирівнювання зліва як на скріні */
+    padding-left: 10%; /* Відступ зліва */
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* --- Навігація --- */
+nav {
+    background-color: #f9f9f9; /* Світло-сірий фон меню */
+    padding: 0 10%;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+    color: #0000EE; /* Синій колір посилань як на скріні */
+    padding: 15px 5px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+/* --- Контент --- */
+.content {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+h2, h3 {
+    color: #000;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* --- Картинки Портфоліо (Стиль Влада + John Deere) --- */
+.project-item {
+    margin-bottom: 40px;
+}
+
+.project-img {
+    max-width: 600px; /* Обмеження ширини */
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    
+    /* Анімація збільшення (вимога практичної) */
+    transition: 0.3s;
+    transform: scale(0.98);
+}
+
+.project-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* --- Обтікання (Practical Requirements) --- */
+.Img {
+    width: 250px;
+    margin: 10px;
+}
+.left { float: left; margin-right: 20px; }
+.right { float: right; margin-left: 20px; }
+.clearfix::after { content: ""; clear: both; display: table; }
+
+/* --- Відео --- */
+.multimedia { overflow: auto; margin-top: 20px; }
+.multimedia-video { float: left; width: 33.33%; padding: 5px; box-sizing: border-box; }
+
+/* --- Форми --- */
+.login-form { float: right; padding-top: 10px; }
+.contact-page-form label { display: block; margin-top: 10px; font-weight: bold; }
+.contact-page-form input[type="text"], .contact-page-form textarea {
+    width: 50%; /* Як на скріні, не на всю ширину */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+.contact-page-form input[type="submit"] {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #eee;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+/* --- Футер --- */
+footer {
+    padding: 20px 10%;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 50px;
+}
+
+/* --- Квадрат (Вимога анімації) --- */
+.square {
+    width: 50px; height: 50px; background: orange;
+    position: absolute; top: 20px; right: 20px;
+    animation: spin 4s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
